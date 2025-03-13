@@ -12,14 +12,16 @@ body{
     font-style: normal;
   }
   
-
+.card{
+    font-size: 13px;
+}
   
 .card img{
-    height: 250px;
+    height: 200px;
 }
 .enlace {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     background: linear-gradient(90deg, #0f0814, #3e256d);
     padding: 10px;
@@ -32,3 +34,43 @@ body{
     transform: scale(1.1); 
     
 }
+
+.col{
+    overflow: hidden;
+
+}
+.col img{
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.col img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+.clearfix img{
+    width: 250px;
+    height: 350px;
+}
+.clearfix{
+    
+    
+    width: 50%;
+    margin: 30px;
+}
+    .fondo {
+        width: 250px;         
+        height: 250px;      
+        border-radius: 50%;  
+        background-color: #30014d; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        overflow: hidden;        
+      }
+  
+      .image-container img {
+        width: 100%;          
+        height: 100%;
+        object-fit: cover;      
+      }
+

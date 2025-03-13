@@ -6,24 +6,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="/style.css">
+    <script src="./script/index.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>  
     <header>
-      <nav id="navbar-example2" class="navbar bg-gradient px-3 mb-3">
+      <nav id="navbar-example2" class="navbar bg-gradient px-3 mb-3"> 
         <img src="./multimedia/logodanilo-removebg-preview.png" alt="logo" width="50" height="55">
-        <ul class="nav nav-pills">
+        <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">Sobre mi</a>
+            <a class="nav-link text-white bg-gradient" href="#scrollspyHeading1">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Proyectos</a>
+            <a class="nav-link text-white bg-gradient" href="#scrollspyHeading2">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading3">Habilidades tecnicas</a>
+            <a class="nav-link text-white bg-gradient" href="#scrollspyHeading3">Habilidades tecnicas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading4">Experiencia</a>
+            <a class="nav-link text-white bg-gradient" href="#scrollspyHeading4">Experiencia</a>
           </li>
         </ul>
       </nav>
@@ -32,7 +33,7 @@
     </header>
     <main>
         <div>
-          <img src="./multimedia/logodanilo-removebg-preview.png" class="rounded mx-auto d-block" alt="foto" width="80" height="85">
+          <img src="./multimedia/logodanilo-removebg-preview.png" class="rounded mx-auto d-block" alt="foto" width="70" height="75">
           
           <div class="position-relative">
             <div class="position-absolute top-50 start-50 translate-middle">
@@ -43,11 +44,27 @@
         </div>
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg--bs-tertiary-color p-3 rounded-2" tabindex="0">
           <h4 id="scrollspyHeading1">Sobre mi</h4>
-          <p></p>
+          <div class="clearfix">
+            <div class="fondo">
+              <img src="./multimedia/yo-removebg-preview.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." >
+            </div>
+          
+            <p>
+              Soy un profesional de 21 años con sólida experiencia laboral desde hace 4 años, lo que me ha permitido desarrollar una fuerte ética de trabajo, autodisciplina y habilidades para aprender de forma independiente. 
+            </p>
+          
+            <p>
+              Mi actitud positiva y perseverante me impulsa a mejorar continuamente y a enfrentar desafíos con entusiasmo. Me considero una persona amigable y colaborativa, con una mentalidad enfocada en la productividad y en siempre potenciar mis errores.
+            </p>
+          
+            <p>
+              Me gusta mantenerme activo, aprendiendo con el objetivo de aportar valor en cada tarea.
+            </p>  
+          </div>
           <h4 id="scrollspyHeading2">Proyectos</h4>
-                    <div class="container text-center">
+            <div class="container text-center">
               <div class="row">
-                <div class="card" style="width: 30%;  padding: 0px; color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
+                <div class="card" style="width: 15%; padding: 0px; color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
                   <img src="./multimedia/website.png" class="card-img-top" alt=" ">
                   <div class="card-body">
                     <h5 class="card-title">Sitio web</h5>
@@ -55,7 +72,7 @@
                     <a href="https://danilolaufer.github.io/quinta-laufer/" class="enlace" target="_blank">Ver el proyecto</a>
                   </div>
                 </div>
-                <div class="card" style="width: 30%;  padding: 0px;margin-left: 50px;color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
+                <div class="card" style="width: 15%;  padding: 0px;margin-left: 50px;color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
                   <img src="./multimedia/ecommerce.png" class="card-img-top" alt="..." >
                   <div class="card-body">
                     <h5 class="card-title">Web Ecommerce</h5>
@@ -63,7 +80,7 @@
                     <a href="https://danilolaufer.github.io/clientes-nuevos/" class="enlace" target="_blank">Ver el proyecto</a>
                   </div>
                 </div>
-                <div class="card" style="width: 30%; padding: 0px;margin-left: 50px;color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
+                <div class="card" style="width: 15%; padding: 0px;margin-left: 50px;color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
                   <img src="./multimedia/conversor.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Conversor de monedas / Java</h5>
@@ -71,11 +88,107 @@
                     <a href="https://danilolaufer.github.io/quinta-laufer/" class="enlace" target="_blank">Ver el proyecto</a>
                   </div>
                 </div>
+                <div class="card" style="width: 15%; padding: 0px; color: white;margin-left: 50px; background: linear-gradient(150deg, #3e256d,#0f0814 );">
+                  <img src="./multimedia/calculadora.png" class="card-img-top" alt=" ">
+                  <div class="card-body">
+                    <h5 class="card-title">Calculadora de calorias</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://danilolaufer.github.io/project25/" class="enlace" target="_blank">Ver el proyecto</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 15%; padding: 0px; color: white;margin-left: 50px; background: linear-gradient(150deg, #3e256d,#0f0814 );">
+                  <div class="spinner-border" role="status" style="width: 195px; height: 195px;">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto final java</h5>
+                    <p class="card-text">proximamente...</p>
+                    <a href="" class="enlace" target="_blank">Ver el proyecto</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          <h4 id="scrollspyHeading3">Experiencia</h4>
-          <p>...</p>
-          <h4 id="scrollspyHeading4">Habilidades tecnicas</h4>
-        <p>...</p>
+                <h4 id="scrollspyHeading3">Habilidades tecnicas</h4>
+                <div class="container text-center">
+                  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/logo-javascript.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/android-6.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/bootstrap-5-1.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/firebase-1.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/java-4.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/linux-tux.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/microsoft-sql-server-1.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/mongodb-icon-1.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/npm.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/python-5.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/react-2.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/windows-server-2.svg" alt="" width="50" height="50"></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/xml-2.svg" alt="" width="50" height="50"></div>
+                    </div>
+                  </div>
+                </div>
+                
+          <h4 id="scrollspyHeading4">Experiencia</h4>
+            <div class="card text-white" style="background-color: #01032b;">
+              <div class="card-header">
+                Experiencia emprendedora
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Gestor y fundador de tienda online</h5>
+                <p class="card-text">"Lofii-Light" (Mayo 2023 – Noviembre 2023)</p>
+                <ul>
+                  <li>Gestioné un negocio online de dropshipping enfocado en productos de iluminación decorativa.</li>
+                  <li>Creé e implementé estrategias de marketing orgánico en TikTok e Instagram.</li>
+                  <li>Diseñé, mantuve y optimicé la plataforma de la tienda online, asegurando una experiencia de compra fluida para los clientes.</li>
+                  <li>Analicé tendencias de mercado para identificar productos rentables y garantizar precios competitivos.</li>
+                  <li>Adquirí experiencia práctica en operaciones de comercio electrónico, incluyendo gestión de inventarios, atención al cliente y análisis de ventas.</li>
+                </ul>
+              </div>
+            </div>
+            <p></p>
+            <div class="card text-white" style="background-color: #01032b;">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Encargado Autoservicio de productos agrícolas</h5>
+                <p class="card-text">A los 17 años fui responsable de la gestión operativa de la empresa familiar. Mis funciones incluían reposición, control de inventario, 
+                  atención al cliente en caja y administración diaria de la mercadería, 
+                  garantizando la calidad y rotación de los productos para asegurar la satisfacción del cliente.</p>
+                  <p class="card-text">“Quinta Laufer” 
+                    2020 (diciembre) - 2022 (agosto)</p>
+                <ul>
+                  <li>Atencion al cliente en caja</li>
+                  <li>Administracion diaria en la mercaderia</li>
+                  <li>Reposición</li>
+                </ul>
+              </div>
+            </div>
       </div>
     </main>
     <footer>
