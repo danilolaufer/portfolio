@@ -52,8 +52,6 @@ body{
     height: 350px;
 }
 .clearfix{
-    
-    
     width: 50%;
     margin: 30px;
 }
@@ -65,7 +63,8 @@ body{
         display: flex;
         justify-content: center; 
         align-items: center;     
-        overflow: hidden;        
+        overflow: hidden;      
+        margin: 10px auto;  
       }
   
       .image-container img {
@@ -74,3 +73,17 @@ body{
         object-fit: cover;      
       }
 
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px;
+}
+.redes img{
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+
+}
+.redes img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
