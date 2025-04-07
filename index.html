@@ -4,206 +4,302 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="./style.css">
     <script src="./script/index.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>  
+  <section id="inicio"></section>
     <header>
-      <nav id="navbar-example2" class="navbar bg-gradient px-3 mb-3"> 
-        <img src="./multimedia/danilo.png" alt="logo" width="50" height="55">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link text-white bg-gradient" href="#scrollspyHeading1">Sobre mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white bg-gradient" href="#scrollspyHeading2">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white bg-gradient" href="#scrollspyHeading3">Habilidades tecnicas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white bg-gradient" href="#scrollspyHeading4">Experiencia</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg  navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./multimedia/danilo.png" alt="logo" width="50" height="55"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#scrollspyHeading1">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#scrollspyHeading2">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#scrollspyHeading3">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#scrollspyHeading4">Experiencia</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
-      
     </header>
-    <main>
-        <div>
-          <img src="./multimedia/danilo.png" class="rounded mx-auto d-block" alt="foto" width="70" height="75">
+    
+    <main class="container mt-5">
+      <div class="text-center">
+        <h1>Hola, Soy Danilo</h1>
+        <h3 style="font-size: 20px; text-shadow: 2px 2px 10px;">Técnico en Desarrollo de Aplicaciones Multiplataforma</h3>
+      </div>
+  
+      <section id="scrollspyHeading1" class="mt-5">
+        <div class="row align-items-center">
+          <div class="fondo clearfix col-12 col-md-6 col-lg-6">
+            <img src="./multimedia/IMG_2205-removebg-preview.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." >
+          </div>
           
-          <div class="position-relative">
-            <div class="position-absolute top-50 start-50 translate-middle">
-              <h1>Hola, Soy Danilo</h1>
-              <h3>Estudiante de DAM DUAL</h3>
+          <div class="col-md-6">
+            <p id="sobreMiTexto">
+              Soy un estudiante de DAM apasionado por crear soluciones y ayudar con tecnología. A lo largo de mi camino he trabajado con tecnologías como Java, Python, React y bases de datos SQL, además de liderar mi propia tienda online. Me destaco por mi actitud proactiva, adaptabilidad y compromiso por crecer en cada proyecto. <b>Actualmente, busco oportunidades donde pueda seguir desarrollándome profesionalmente y aportar valor real con mis habilidades.</b> 
+            </p>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="https://www.linkedin.com/in/danilolaura/"><img src="./multimedia/linkedin-icon-2.svg" width="30"></a>
+              <a href="https://github.com/danilolaufer"><img src="./multimedia/github-icon-2.svg" width="30"></a>
+              <a href="mailto:danilolaura20@gmail.com"><img src="./multimedia/gmail-icon.svg" width="30"></a>
             </div>
           </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg--bs-tertiary-color p-3 rounded-2 " tabindex="0">
-          <h4 id="scrollspyHeading1">Sobre mi</h4>
-          <div class="container">
-            <div class="row">
-              <div class="fondo clearfix col-12 col-md-6 col-lg-6">
-                <img src="./multimedia/yo-removebg-preview.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." >
-              </div>
-              <div class="col-12 col-md-6 col-lg-6" >
-                <p style="width: 100%; margin: 0 auto; align-items: center;">
-                Soy un profesional de 21 años con sólida experiencia laboral desde hace 4 años, lo que me ha permitido desarrollar una fuerte ética de trabajo, autodisciplina y habilidades para aprender de forma independiente. Mi actitud positiva y perseverante me impulsa a mejorar continuamente y a enfrentar desafíos con entusiasmo. Me considero una persona amigable y colaborativa, con una mentalidad enfocada en la productividad y en siempre potenciar mis errores. Me gusta mantenerme activo, aprendiendo con el objetivo de aportar valor en cada tarea.
-              </p>
-              <div class="redes">
-                <img src="./multimedia/linkedin-icon-2.svg" alt="" width="35" height="35">
-                <img src="./multimedia/github-icon-2.svg" alt="" width="35" height="35">
-                <img src="./multimedia/gmail-icon.svg" alt="" width="35" height="35">                
-              </div>
-
-              </div>
-                
-            </div>
-          </div>
+      </section>
           <br>
           <br>
           <br>
-          <h4 id="scrollspyHeading2">Proyectos</h4>
+          <h4 id="scrollspyHeading2" class="text-center">Proyectos</h4>
             <div class="container  text-center ">
-              <div class="row">
-              <div class="d-flex flex-wrap">
-                <div class="card col-12 col-md-4 col-lg-3" style=" width: 300px;margin: 0 auto; padding: 0px; color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
-                  <img src="./multimedia/website.png" class="card-img-top" alt=" ">
-                  <div class="card-body">
-                    <h5 class="card-title">Sitio web</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://danilolaufer.github.io/quinta-laufer/" class="enlace" target="_blank">Ver el proyecto</a>
+              <div class="row g-4">
+                <!--CARD INICIO-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card-proyecto">
+                    <a href="https://danilolaufer.github.io/quinta-laufer/index.html#"><img src="./multimedia/website.png"  class="card-img-top" alt="Imagen del proyecto"></a>
+                      <div class="p-3">
+                          <h5 class="card-title">Mi primer sitio web</h5>
+                          <br>
+                          <button class="btn btn-outline-light btn-sm toggle-detalle">Ver más</button>
+                      </div>
+                      <div class="detalle-proyecto">
+                          <h6>Descripción:</h6>
+                          <p>Este fue mi primer proyecto web creado con pasión y entusiasmo.</p>
+                          <h6>Tecnologías:</h6>
+                          <p>HTML, CSS, JavaScript, Bootstrap</p>
+                          <button class="btn btn-danger btn-sm toggle-detalle mt-3">Cerrar</button>
+                      </div>
                   </div>
-                </div>
-                <div class="card col-12 col-md-4 col-lg-3" style=" width: 300px; margin: 0 auto; padding: 0px;color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
-                  <img src="./multimedia/ecommerce.png" class="card-img-top" alt="..." >
-                  <div class="card-body">
-                    <h5 class="card-title">Web Ecommerce</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://danilolaufer.github.io/clientes-nuevos/" class="enlace" target="_blank">Ver el proyecto</a>
-                  </div>
-                </div>
-                <div class="card col-12 col-md-4 col-lg-3" style="width: 300px;margin: 0 auto; padding: 0px;color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
-                  <img src="./multimedia/conversor.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Conversor de monedas / Java</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://danilolaufer.github.io/quinta-laufer/" class="enlace" target="_blank">Ver el proyecto</a>
-                  </div>
-                </div>
-                <div class="card col-12 col-md-4 col-lg-3" style="width: 300px;margin: 0 auto; padding: 0px; color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
-                  <img src="./multimedia/calculadora.png" class="card-img-top" alt=" ">
-                  <div class="card-body">
-                    <h5 class="card-title">Calculadora de calorias</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://danilolaufer.github.io/project25/" class="enlace" target="_blank">Ver el proyecto</a>
-                  </div>
-                </div>
-                <div class="card col-12 col-md-4 col-lg-3" style="width: 300px;margin: 0 auto; padding: 0px; color: white; background: linear-gradient(150deg, #3e256d,#0f0814 );">
-                  <div class="spinner-border " role="status" style="width: 100px; height: 100px; margin: 0 auto;">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Proyecto final java</h5>
-                    <p class="card-text">proximamente...</p>
-                    <a href="" class="enlace" target="_blank">Ver el proyecto</a>
-                  </div>
+                </div>  
+              <!--CARD FIN-->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card-proyecto">
+                    <a href="https://danilolaufer.github.io/clientes-nuevos/"><img src="./multimedia/ecommerce.png" class="card-img-top" alt="Imagen del proyecto"></a>
+                    <div class="p-3">
+                        <h5 class="card-title">Tienda online - Quinta Laufer</h5>
+                        <br>
+                        <button class="btn btn-outline-light btn-sm toggle-detalle">Ver más</button>
+                    </div>
+                    <div class="detalle-proyecto">
+                        <h6>Descripción:</h6>
+                        <p>Este proyecto fue creado con pasión. Implementa funcionalidades interesantes como XYZ...</p>
+                        <h6>Tecnologías:</h6>
+                        <p>HTML, CSS, JavaScript, Bootstrap</p>
+                        <button class="btn btn-danger btn-sm toggle-detalle mt-3">Cerrar</button>
+                    </div>
                 </div>
               </div>
+            <!--SEPARADOR-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-proyecto">
+                  <img src="./multimedia/conversor.jpg" class="card-img-top" alt="Imagen del proyecto">
+                  <div class="p-3">
+                      <h5 class="card-title">Conversor de monedas</h5>
+                      <br>
+                      <button class="btn btn-outline-light btn-sm toggle-detalle">Ver más</button>
+                  </div>
+                  <div class="detalle-proyecto">
+                      <h6>Descripción:</h6>
+                      <p>Este proyecto fue creado con pasión. Implementa funcionalidades interesantes como XYZ...</p>
+                      <h6>Tecnologías:</h6>
+                      <p>HTML, CSS, JavaScript, Bootstrap</p>
+                      <button class="btn btn-danger btn-sm toggle-detalle mt-3">Cerrar</button>
+                  </div>
               </div>
-
+          </div>
+          <!--SEPARADOR-->
+          <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card-proyecto"><a href="https://danilolaufer.github.io/project25/index.html"><img src="./multimedia/calculadora.png" class="card-img-top" alt="Imagen del proyecto"></a>
+                      <div class="p-3">
+                          <h5 class="card-title">Calculadora de calorias</h5>
+                          <br>
+                          <button class="btn btn-outline-light btn-sm toggle-detalle">Ver más</button>
+                      </div>
+                      <div class="detalle-proyecto">
+                          <h6>Descripción:</h6>
+                          <p>Este proyecto fue creado con pasión. Implementa funcionalidades interesantes como XYZ...</p>
+                          <h6>Tecnologías:</h6>
+                          <p>HTML, CSS, JavaScript, Bootstrap</p>
+                          <button class="btn btn-danger btn-sm toggle-detalle mt-3">Cerrar</button>
+                      </div>
+                  </div>
+              </div>
+              <!--SEPARADOR-->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card-proyecto">
+                    <img src="./multimedia/androidstudio.png" class="card-img-top" alt="Imagen del proyecto">
+                    <div class="p-3">
+                        <h5 class="card-title">Proyecto final - JAVA</h5>
+                        <br>
+                        <button class="btn btn-outline-light btn-sm toggle-detalle">Ver más</button>
+                    </div>
+                    <div class="detalle-proyecto">
+                        <h6>Descripción:</h6>
+                        <p>Proyecto final</p>
+                        <h6>Tecnologías:</h6>
+                        <p>Android Studio con JAVA</p>
+                        <button class="btn btn-danger btn-sm toggle-detalle mt-3">Cerrar</button>
+                    </div>
+                </div>
             </div>
-                <h4 id="scrollspyHeading3">Habilidades tecnicas</h4>
+            <!--SEPARADOR-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card-proyecto">
+                  <img src="./multimedia/sistemadegestion.png" class="card-img-top" alt="Imagen del proyecto">
+                  <div class="p-3">
+                      <h5 class="card-title">Sistema de gestion </h5>
+                      <br>
+                      <button class="btn btn-outline-light btn-sm toggle-detalle">Ver más</button>
+                  </div>
+                  <div class="detalle-proyecto">
+                      <h6>Descripción:</h6>
+                      <p>Acceso a datos en proceso, usando java, xampp</p>
+                      <h6>Tecnologías:</h6>
+                      <p>JAVA, XAMPP</p>
+                      <button class="btn btn-danger btn-sm toggle-detalle mt-3">Cerrar</button>
+                  </div>
+              </div>
+          </div>
+          <!--SEPARADOR-->
+          </div>
+        </div>
+            </div>
+            <br>
+                <h4 id="scrollspyHeading3" class="text-center">Habilidades tecnicas</h4>
                 <div class="container text-center">
                   <div class="row row-cols-4 row-cols-lg-5 g-2 g-lg-3">
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/logo-javascript.svg" alt="" width="50" height="50"></div>
+                      <p>JavaScript</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/android-6.svg" alt="" width="50" height="50"></div>
+                      <p>Android Studio</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/bootstrap-5-1.svg" alt="" width="50" height="50"></div>
+                      <p>Bootstrap</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/firebase-1.svg" alt="" width="50" height="50"></div>
+                      <p>Firebase</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/java-4.svg" alt="" width="50" height="50"></div>
+                      <p>Java</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/linux-tux.svg" alt="" width="50" height="50"></div>
+                      <p>Linux</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/microsoft-sql-server-1.svg" alt="" width="50" height="50"></div>
+                      <p>SQL server</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/mongodb-icon-1.svg" alt="" width="50" height="50"></div>
+                      <p>Mongodb</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/npm.svg" alt="" width="50" height="50"></div>
+                      <p>npm</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/python-5.svg" alt="" width="50" height="50"></div>
+                      <p>Python</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/react-2.svg" alt="" width="50" height="50"></div>
+                      <p>ReactJS</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/windows-server-2.svg" alt="" width="50" height="50"></div>
+                      <p>Windows server</p>
                     </div>
                     <div class="col">
                       <div class="p-3"> <img src="./multimedia/xml-2.svg" alt="" width="50" height="50"></div>
+                      <p>XML</p>
                     </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/php-svgrepo-com.svg" alt="" width="50" height="50"></div>
+                      <p>PHP</p>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"> <img src="./multimedia/git-icon.svg" alt="" width="50" height="50"></div>
+                      <p>Git</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>   
+                <h4 id="scrollspyHeading4" class="text-center">Experiencia profesional</h4>
+
+                <!-- Experiencia emprendedora -->
+                <div class="card text-white mb-4" style="background-color: #01032b; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                  <div class="card-header text-white text-center" style="background-color: rgb(157, 0, 255); font-size: 17px;">
+                    <strong>Experiencia emprendedora</strong>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fundador y Gestor - Loffi Lights (Mayo 2023 - Noviembre 2023)</h5>
+                    <br>
+                    <p>Tienda online de dropshipping especializada en iluminación decorativa.</p>
+                    <br>
+                    <ul class="animated fadeInUp">
+                      <li>Implementé estrategias de marketing en TikTok e Instagram logrando incrementar el tráfico en un 40%.</li>
+                      <br>
+                      <li>Gestioné inventarios y atención al cliente, optimizando los procesos de ventas y postventa.</li>
+                    </ul>
                   </div>
                 </div>
                 
-          <h4 id="scrollspyHeading4">Experiencia</h4>
-            <div class="card text-white" style="background-color: #01032b;">
-              <div class="card-header">
-                Experiencia emprendedora
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Gestor y fundador de tienda online</h5>
-                <p class="card-text">"Lofii-Light" (Mayo 2023 – Noviembre 2023)</p>
-                <ul>
-                  <li>Gestioné un negocio online de dropshipping enfocado en productos de iluminación decorativa.</li>
-                  <li>Creé e implementé estrategias de marketing orgánico en TikTok e Instagram.</li>
-                  <li>Diseñé, mantuve y optimicé la plataforma de la tienda online, asegurando una experiencia de compra fluida para los clientes.</li>
-                  <li>Analicé tendencias de mercado para identificar productos rentables y garantizar precios competitivos.</li>
-                  <li>Adquirí experiencia práctica en operaciones de comercio electrónico, incluyendo gestión de inventarios, atención al cliente y análisis de ventas.</li>
-                </ul>
-              </div>
-            </div>
-            <p></p>
-            <div class="card text-white" style="background-color: #01032b;">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Encargado Autoservicio de productos agrícolas</h5>
-                <p class="card-text">A los 17 años fui responsable de la gestión operativa de la empresa familiar. Mis funciones incluían reposición, control de inventario, 
-                  atención al cliente en caja y administración diaria de la mercadería, 
-                  garantizando la calidad y rotación de los productos para asegurar la satisfacción del cliente.</p>
-                  <p class="card-text">“Quinta Laufer” 
-                    2020 (diciembre) - 2022 (agosto)</p>
-                <ul>
-                  <li>Atencion al cliente en caja</li>
-                  <li>Administracion diaria en la mercaderia</li>
-                  <li>Reposición</li>
-                </ul>
-              </div>
-            </div>
+                <!-- Experiencia profesional -->
+                <div class="card text-white mb-4" style="background-color: #01032b; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                  <div class="card-header text-white text-center" style="background-color: rgb(157, 0, 255); font-size: 17px;">
+                    <strong>Experiencia profesional</strong>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Administrador de Base de Datos – Quinta Laufer (Dic 2020 – Ago 2022)</h5>
+                    <br>
+                    <p>Autoservicio de frutas y verduras con 3 sucursales.</p>
+                    <br>
+                    <ul class="animated fadeInUp">
+                      <li>Administré bases de datos de productos y ventas usando Spegasoft.</li>
+                      <br>
+                      <li>Creé informes de ventas diarios que ayudaron a mejorar la gestión financiera del negocio.</li>
+                    </ul>
+                  </div>
+                </div>                
       </div>
     </main>
+    <div class="code-container" id="codeContainer"></div>
     <footer>
-
+      <div class="d-flex justify-content-center">
+        <a href="#inicio" class="btn btn-outline-light mt-3 ">
+          <i class="bi bi-arrow-up-circle-fill"></i> Volver arriba
+        </a>
+      </div>
+      <div >
+        <div class="d-flex justify-content-center">
+          <h5 style="text-align: center; margin: 30px;">"Entusiasmo y disciplina, mi fórmula diaria para crear sin límites."</h5>
+        </div>        
+        <p style="text-align: center;"> &copy; 2025 Danilo Laura. Todos los derechos reservados.</p>
+      </div>
     </footer>
 </body>
 </html>
