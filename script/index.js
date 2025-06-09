@@ -38,3 +38,35 @@ document.querySelectorAll('.toggle-detalle').forEach(btn => {
         card.classList.toggle('abierto');
     });
 });
+
+
+document.querySelector('.download-btn').addEventListener('click', function(e){
+    const confirmation = document.createElement('div');
+    confirmation.textContent = 'Descargando CV';
+    confirmation.style.cssText= `
+    position: fixed;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    font-weight: 600;
+    animation: slideIn 0.3s ease;
+    `;
+
+    const style = document.createElement('style');
+    style.textContent= `
+    @keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+    }
+    `;
+    document.head.appendChild(style);
+    document.body.appendChild(confirmation);
+
+    setTimeout(() => {
+        confirmation.remove();
+        style.remove();
+    }, 3000);
+});
