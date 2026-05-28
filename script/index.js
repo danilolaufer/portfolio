@@ -80,3 +80,30 @@ if (downloadButton) {
         }, 3000);
     });
 }
+
+const revealElements = document.querySelectorAll(
+    '.section-title, .about-card, .metric, .card-proyecto, .skill-item, .experience-card, .contact-card'
+);
+
+revealElements.forEach((element, index) => {
+    element.classList.add('reveal-on-scroll');
+    element.style.setProperty('--reveal-delay', `${Math.min(index % 6, 5) * 70}ms`);
+});
+
+if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.16,
+        rootMargin: '0px 0px -70px 0px'
+    });
+
+    revealElements.forEach((element) => revealObserver.observe(element));
+} else {
+    revealElements.forEach((element) => element.classList.add('is-visible'));
+}
