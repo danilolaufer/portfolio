@@ -1,13 +1,4 @@
-const codeSnippets = [
-    "int main() { return 0; }",
-    "console.log('Hola mundo')",
-    "function test() { return true; }",
-    "const x = Math.random();",
-    "if (x > 0.5) alert('Wow');",
-    "while(true) break;",
-    "let str = 'Hello';",
-    "document.querySelector('body');"
-];
+
 
 function createCodeLine() {
     const codeContainer = document.getElementById("codeContainer");
