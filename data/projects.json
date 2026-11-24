@@ -1,7 +1,7 @@
 {
   "user": "danilolaufer",
   "source": "pinned",
-  "generatedAt": "2026-11-24T17:35:16.416Z",
+  "generatedAt": "2026-11-24T17:38:56.559Z",
   "projects": [
     {
       "name": "Conversor-de-moneda-JAVA",
@@ -68,6 +68,50 @@
       "createdAt": "2026-10-09T11:44:41Z",
       "featured": true,
       "order": 2
+    },
+    {
+      "name": "clientes-nuevos",
+      "fullName": "danilolaufer/clientes-nuevos",
+      "title": "Clientes nuevos",
+      "summary": "Mi primer proyecto en tienda online!",
+      "detailHtml": "<div id=\"readme\" class=\"md\" data-path=\"README.md\"><article class=\"markdown-body entry-content\" itemprop=\"text\"><p dir=\"auto\">Tienda dinamica de Quinta Laufer - Autoservicio de frutas y verduras (proyecto js)</p>\n</article></div>",
+      "hasPortfolioFile": false,
+      "tech": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "url": "https://github.com/danilolaufer/clientes-nuevos",
+      "demo": "https://danilolaufer.github.io/clientes-nuevos/",
+      "image": "./multimedia/ecommerce.png",
+      "pushedAt": "2025-01-22T21:21:04Z",
+      "createdAt": "2022-11-28T17:59:55Z",
+      "featured": false,
+      "order": 3
+    },
+    {
+      "name": "TicketControl",
+      "fullName": "danilolaufer/TicketControl",
+      "title": "TicketControl",
+      "summary": "TFC",
+      "detailHtml": "",
+      "hasPortfolioFile": false,
+      "tech": [
+        "Kotlin"
+      ],
+      "language": "Kotlin",
+      "topics": [],
+      "stars": 0,
+      "url": "https://github.com/danilolaufer/TicketControl",
+      "demo": "",
+      "image": "./multimedia/ticket-control.svg",
+      "pushedAt": "2026-05-11T09:35:58Z",
+      "createdAt": "2026-05-11T09:32:14Z",
+      "featured": false,
+      "order": 4
     }
   ]
 }
