@@ -1,1 +1,53 @@
 PORTFOLIO - DANILO LAURA
+
+PROYECTOS DESDE GITHUB
+======================
+
+La sección "Proyectos" se genera sola a partir de los repos FIJADOS en
+https://github.com/danilolaufer (botón "Customize your pins", máximo 6).
+
+Cómo cambiar los proyectos que se muestran
+------------------------------------------
+1. Fija o quita repos en tu perfil de GitHub.
+2. Espera a la sincronización diaria (06:00 UTC) o lánzala ya:
+   pestaña Actions -> "Sincronizar proyectos de GitHub" -> "Run workflow".
+3. La Action actualiza data/projects.json y GitHub Pages publica el cambio.
+
+También se añaden los repos con el topic "portfolio".
+Ajustes en portfolio.config.json: usuario, máximo de proyectos, repos
+excluidos e imágenes locales por repo.
+
+Cómo explicar cada proyecto
+---------------------------
+El texto sale, por orden de prioridad, de:
+  1. Un archivo PORTFOLIO.md en la raíz del repo.
+  2. La descripción del repo ("About").
+  3. El primer párrafo del README.
+
+La ventana "Ver más" muestra el cuerpo de PORTFOLIO.md o, si no existe, el README.
+
+Plantilla de PORTFOLIO.md (todos los campos son opcionales):
+
+  ---
+  title: Ticket Control
+  summary: App Android para registrar y controlar incidencias. Trabajo Final de Ciclo.
+  tech: [Kotlin, Android Studio, Firebase]
+  demo: https://enlace-a-la-demo
+  image: docs/captura.png
+  featured: true
+  order: 1
+  ---
+
+  ## El problema
+  ...
+
+  ## Qué hice
+  ...
+
+  ## Lo que aprendí
+  ...
+
+Probar en local
+---------------
+  node scripts/sync-projects.mjs   (regenera data/projects.json)
+  npx http-server .                (sirve la web en http://localhost:8080)

@@ -1,0 +1,12 @@
+{
+  "user": "danilolaufer",
+  "maxProjects": 6,
+  "extraTopic": "portfolio",
+  "exclude": ["portfolio"],
+  "images": {
+    "TicketControl": "./multimedia/ticket-control.svg",
+    "clientes-nuevos": "./multimedia/ecommerce.png",
+    "Conversor-de-moneda-JAVA": "./multimedia/conversor.jpg",
+    "PRIME---gestion-de-tareas-y-finanzas": "./multimedia/prime.png"
+  }
+}
